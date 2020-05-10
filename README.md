@@ -1,7 +1,7 @@
 # Nonsense Generator
 ---
 
-![Minion](https://imgur.com/N7llFew)
+![Minion](https://imgur.com/N7llFew.png)
 
 A simple web application for generating nonsense
 
