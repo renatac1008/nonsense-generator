@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <h3 class="my-5 title">你想對誰說幹話</h3>
+  </div>
+  <form method="POST" action="/">
+    <div class="form-group options">
+      <div class="occupation">
+        <div class="img-box">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
+        </div>
+        <div class="form-check">
+          <input class=" form-check-input" type="radio" name="occupation" id="engineer" value="engineer"
+            {{#if  (keep occupation 'engineer') }}checked {{/if}}>
+          <label class="form-check-label ml-5" for="engineer">
+            工程師
+          </label>
+        </div>
+      </div>
+      <div class="occupation">
+        <div class="img-box">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="">
+        </div>
+        <div class="form-check">
+          <input class=" form-check-input" type="radio" name="occupation" id="designer" value="designer"
+            {{#if  (keep occupation 'designer') }}checked {{/if}}>
+          <label class="form-check-label ml-5" for="designer">
+            設計師
+          </label>
+        </div>
+      </div>
+      <div class="occupation">
+        <div class="img-box">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="occupation" id="entrepreneur" value="entrepreneur"
+            {{#if  (keep occupation 'entrepreneur') }}checked {{/if}}>
+          <label class="form-check-label ml-5" for="entrepreneur">
+            創業家
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group form-row d-flex">
+      <div>
+        <button type="submit" class="btn btn-info ml-3 mr-2 ">產生幹話</button>
+      </div>
+      <div class="alert alert-info" role="alert">
+        <span>{{ nonsense }}</span>
+      </div>
+    </div>
+  </form>
+</div>
